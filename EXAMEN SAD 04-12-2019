@@ -85,23 +85,9 @@ Get-WmiObject -class "Win32_Processor"| % {
     Write-Host $_.Status 
     Write-Host 
 }
-
-
 #ver porgramas pc
 Get-Package
-
-
-#ver si una contseña es buena
-
-$contraseña = Read-Host introduce la contraseña 
-
-
-$contraseña 
-
-
-
-
-
+#########ver si una contseña es buena
 
 
 $contraseña=Read-Host -AsSecureString 'introduce una contraseña  '
