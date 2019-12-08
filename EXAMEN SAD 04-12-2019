@@ -65,7 +65,7 @@ Start-Sleep 5
 
 $segundo = Get-FileHash hola.txt
 
-if($primero -eq $segundo){
+if($primero.Hash -eq $segundo.Hash){
 
 Write-Host "Todo funciona correctamente"
 }
